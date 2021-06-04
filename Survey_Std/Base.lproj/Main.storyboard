@@ -4,13 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Survey_Std" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login_UI" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Survey_Std" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +53,9 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-ML-evP">
                                 <rect key="frame" x="104" y="421" width="182" height="111"/>
                                 <state key="normal" backgroundImage="login_button"/>
+                                <connections>
+                                    <action selector="onClick_login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j09-bZ-xbV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="소중한 강의평가는 큰 도움이 됩니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0w-6X-Q5e">
                                 <rect key="frame" x="74.333333333333329" y="560" width="242.66666666666669" height="20.333333333333371"/>
@@ -85,14 +89,62 @@
                             <constraint firstItem="ecQ-4S-PMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="zmD-Tb-54A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="login_btn" destination="P6A-ML-evP" id="Xxp-NQ-ebr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306.15384615384613" y="86.729857819905206"/>
+            <point key="canvasLocation" x="-591" y="41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Ak-36-5in">
+            <objects>
+                <viewController storyboardIdentifier="main_menu_controller" id="YrJ-tt-wZK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gn6-lU-kOk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="goe-KH-Bfd">
+                                <rect key="frame" x="71" y="199" width="248" height="216"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj7-Tl-IiJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="108"/>
+                                        <state key="normal" title="강의평가 진행하기" image="button_강의평가_진행">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cf-eK-989">
+                                        <rect key="frame" x="0.0" y="108" width="248" height="108"/>
+                                        <state key="normal" image="button_성적확인">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0qK-6M-KmY"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.96862745100000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="goe-KH-Bfd" firstAttribute="leading" secondItem="0qK-6M-KmY" secondAttribute="leading" constant="71" id="3TV-7Q-k0H"/>
+                            <constraint firstItem="0qK-6M-KmY" firstAttribute="trailing" secondItem="goe-KH-Bfd" secondAttribute="trailing" constant="71" id="qZr-Tr-bgK"/>
+                            <constraint firstItem="0qK-6M-KmY" firstAttribute="bottom" secondItem="goe-KH-Bfd" secondAttribute="bottom" constant="395" id="std-9o-4h2"/>
+                            <constraint firstItem="goe-KH-Bfd" firstAttribute="top" secondItem="0qK-6M-KmY" secondAttribute="top" constant="155" id="uhZ-ib-gTv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8A-P9-B4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="87"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image" width="521" height="521"/>
+        <image name="button_강의평가_진행" width="248" height="108"/>
+        <image name="button_성적확인" width="248" height="108"/>
         <image name="login_button" width="182" height="111"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
