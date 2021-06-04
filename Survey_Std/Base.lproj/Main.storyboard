@@ -110,13 +110,13 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj7-Tl-IiJ">
                                         <rect key="frame" x="0.0" y="0.0" width="248" height="108"/>
-                                        <state key="normal" title="강의평가 진행하기" image="button_강의평가_진행">
+                                        <state key="normal" title="강의평가 진행하기" image="button_강의평가_진행">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cf-eK-989">
                                         <rect key="frame" x="0.0" y="108" width="248" height="108"/>
-                                        <state key="normal" image="button_성적확인">
+                                        <state key="normal" image="button_성적확인">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                     </button>
@@ -140,8 +140,8 @@
     </scenes>
     <resources>
         <image name="Image" width="521" height="521"/>
-        <image name="button_강의평가_진행" width="248" height="108"/>
-        <image name="button_성적확인" width="248" height="108"/>
+        <image name="button_강의평가_진행" width="248" height="108"/>
+        <image name="button_성적확인" width="248" height="108"/>
         <image name="login_button" width="182" height="111"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
