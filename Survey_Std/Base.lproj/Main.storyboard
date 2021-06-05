@@ -98,11 +98,10 @@
             </objects>
             <point key="canvasLocation" x="-591" y="41"/>
         </scene>
-        <!--View Controller-->
+        <!--Main menu controller-->
         <scene sceneID="1Ak-36-5in">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b8A-P9-B4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="main_menu_controller" id="YrJ-tt-wZK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main_menu_controller" id="YrJ-tt-wZK" customClass="main_menu_controller" customModule="Survey_Std" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gn6-lU-kOk">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,16 +126,31 @@
                                     <segue destination="eum-UH-G9V" kind="show" id="LSG-Or-ufy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-fX-3yr">
+                                <rect key="frame" x="329" y="110" width="44" height="30"/>
+                                <state key="normal" title="logout">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="YrJ-tt-wZK" eventType="touchUpInside" id="g1M-Tc-Trl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0qK-6M-KmY"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.96862745100000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0qK-6M-KmY" firstAttribute="bottom" secondItem="MgC-fX-3yr" secondAttribute="bottom" constant="670" id="Aew-US-rLr"/>
+                            <constraint firstItem="0qK-6M-KmY" firstAttribute="trailing" secondItem="MgC-fX-3yr" secondAttribute="trailing" constant="17" id="W3V-7I-YaM"/>
+                            <constraint firstItem="MgC-fX-3yr" firstAttribute="leading" secondItem="0qK-6M-KmY" secondAttribute="leading" constant="329" id="ix5-TK-dX8"/>
+                            <constraint firstItem="MgC-fX-3yr" firstAttribute="top" secondItem="0qK-6M-KmY" secondAttribute="top" constant="22" id="ldd-Ly-MUc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lU5-IK-PPZ">
-                        <barButtonItem key="leftBarButtonItem" title="로그아웃" id="wl6-6d-Jdt">
-                            <color key="tintColor" systemColor="labelColor"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="lU5-IK-PPZ"/>
+                    <connections>
+                        <outlet property="logout_btn" destination="MgC-fX-3yr" id="G4Y-bf-Y7I"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8A-P9-B4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1126.1538461538462" y="40.521327014218009"/>
         </scene>
@@ -329,9 +343,6 @@
         <image name="인공지능버튼" width="248" height="108"/>
         <image name="채플3버튼" width="248" height="108"/>
         <image name="학문과신앙버튼" width="248" height="108"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
