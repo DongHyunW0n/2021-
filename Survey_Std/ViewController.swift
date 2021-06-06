@@ -10,7 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
   
+    @IBOutlet weak var textfield_id: UITextField!
     @IBOutlet weak var button_login: UIButton!
+    @IBOutlet weak var textfield_pw: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,6 +27,9 @@ class ViewController: UIViewController {
         self.present(vcName!, animated: true, completion: nil)
         
     }
+    
+   
+    
     
 }
 
