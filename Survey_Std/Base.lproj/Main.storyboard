@@ -16,29 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="강의평가" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJO-yM-EF8">
-                                <rect key="frame" x="154" y="72" width="83.333333333333314" height="28.666666666666671"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(학생용)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-4S-PMn">
-                                <rect key="frame" x="167" y="129" width="57" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Ijw-gw-mSZ">
-                                <rect key="frame" x="134" y="181" width="123" height="123"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="123" id="RQG-uc-fgx"/>
-                                    <constraint firstAttribute="height" constant="123" id="cUP-eq-cd6"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGT-AC-mdn">
-                                <rect key="frame" x="30" y="342" width="330" height="76"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JrH-a8-EA6">
+                                <rect key="frame" x="10" y="367" width="370" height="111"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="학번" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZXi-Wm-jF6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-ML-evP">
+                                        <rect key="frame" x="94" y="0.0" width="182" height="111"/>
+                                        <state key="normal" backgroundImage="login_button"/>
+                                        <connections>
+                                            <action selector="login_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nf3-TQ-mbf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EGT-AC-mdn">
+                                <rect key="frame" x="30" y="281" width="330" height="76"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="학번" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZXi-Wm-jF6">
                                         <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,7 +44,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FLV-xk-oJc">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FLV-xk-oJc">
                                         <rect key="frame" x="0.0" y="42" width="330" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,43 +59,55 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6A-ML-evP">
-                                <rect key="frame" x="104" y="421" width="182" height="111"/>
-                                <state key="normal" backgroundImage="login_button"/>
-                                <connections>
-                                    <action selector="login_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nf3-TQ-mbf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="소중한 강의평가는 큰 도움이 됩니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0w-6X-Q5e">
-                                <rect key="frame" x="74.333333333333329" y="560" width="242.66666666666669" height="20.333333333333371"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="rXD-WA-qfp">
+                                <rect key="frame" x="10" y="64" width="370" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강의평가" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJO-yM-EF8">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(학생용)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-4S-PMn">
+                                        <rect key="frame" x="0.0" y="56.666666666666679" width="370" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xS6-PL-Uvm">
+                                <rect key="frame" x="100" y="161" width="190" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0Qu-Gt-cu9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소중한 강의평가는 큰 도움이 됩니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIR-qX-ELX">
+                                <rect key="frame" x="20" y="528" width="350" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="P6A-ML-evP" firstAttribute="top" secondItem="EGT-AC-mdn" secondAttribute="bottom" constant="3" id="0d4-cN-M0M"/>
-                            <constraint firstItem="k0w-6X-Q5e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="66c-vR-yXk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P6A-ML-evP" secondAttribute="trailing" constant="104" id="6Xx-6r-ZDR"/>
-                            <constraint firstItem="mJO-yM-EF8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="7FU-3b-daI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k0w-6X-Q5e" secondAttribute="bottom" constant="229.66999999999999" id="7G0-iP-AoE"/>
-                            <constraint firstItem="Ijw-gw-mSZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="AMM-Vj-0QR"/>
-                            <constraint firstItem="P6A-ML-evP" firstAttribute="top" secondItem="EGT-AC-mdn" secondAttribute="bottom" constant="3" id="BT3-T9-elf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mJO-yM-EF8" secondAttribute="trailing" constant="152.66999999999999" id="Jk1-Tb-T95"/>
-                            <constraint firstItem="Ijw-gw-mSZ" firstAttribute="top" secondItem="ecQ-4S-PMn" secondAttribute="bottom" constant="31.670000000000002" id="MqL-vW-6AZ"/>
-                            <constraint firstItem="EGT-AC-mdn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="P2S-8s-FOL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k0w-6X-Q5e" secondAttribute="trailing" constant="73" id="PHd-zJ-Kew"/>
-                            <constraint firstItem="P6A-ML-evP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="QrP-KF-xS8"/>
-                            <constraint firstItem="mJO-yM-EF8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="Tak-bK-a9U"/>
-                            <constraint firstItem="EGT-AC-mdn" firstAttribute="top" secondItem="Ijw-gw-mSZ" secondAttribute="bottom" constant="38" id="c55-dE-sP9"/>
-                            <constraint firstItem="ecQ-4S-PMn" firstAttribute="top" secondItem="mJO-yM-EF8" secondAttribute="bottom" constant="28.329999999999998" id="hJM-vz-scM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ecQ-4S-PMn" secondAttribute="trailing" constant="166" id="nu2-Lt-VAY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EGT-AC-mdn" secondAttribute="trailing" constant="30" id="obK-02-Y1t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ijw-gw-mSZ" secondAttribute="trailing" constant="133" id="yFJ-y8-cFv"/>
-                            <constraint firstItem="k0w-6X-Q5e" firstAttribute="top" secondItem="P6A-ML-evP" secondAttribute="bottom" constant="28" id="zSe-9j-9mu"/>
-                            <constraint firstItem="ecQ-4S-PMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="zmD-Tb-54A"/>
+                            <constraint firstItem="aIR-qX-ELX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="03i-Fu-8OI"/>
+                            <constraint firstItem="xS6-PL-Uvm" firstAttribute="top" secondItem="rXD-WA-qfp" secondAttribute="bottom" constant="20" id="2F2-zR-Bg4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EGT-AC-mdn" secondAttribute="trailing" constant="30" id="5iw-h3-vtY"/>
+                            <constraint firstItem="xS6-PL-Uvm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Akv-TT-xtt"/>
+                            <constraint firstItem="EGT-AC-mdn" firstAttribute="top" secondItem="xS6-PL-Uvm" secondAttribute="bottom" constant="20" id="PjB-oG-EAc"/>
+                            <constraint firstItem="EGT-AC-mdn" firstAttribute="top" secondItem="xS6-PL-Uvm" secondAttribute="bottom" constant="20" id="RxK-ah-whH"/>
+                            <constraint firstItem="rXD-WA-qfp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="VfZ-G8-tvv"/>
+                            <constraint firstItem="aIR-qX-ELX" firstAttribute="top" secondItem="JrH-a8-EA6" secondAttribute="bottom" constant="50" id="XqB-Ni-YNm"/>
+                            <constraint firstItem="JrH-a8-EA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cSc-xh-PXP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xS6-PL-Uvm" secondAttribute="trailing" constant="100" id="cfo-CP-hFp"/>
+                            <constraint firstItem="JrH-a8-EA6" firstAttribute="top" secondItem="EGT-AC-mdn" secondAttribute="bottom" constant="10" id="eae-Yb-bbs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aIR-qX-ELX" secondAttribute="trailing" constant="20" id="hcj-fE-ItG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXD-WA-qfp" secondAttribute="trailing" constant="10" id="mMT-4B-iU1"/>
+                            <constraint firstItem="EGT-AC-mdn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="myF-WY-GPu"/>
+                            <constraint firstItem="rXD-WA-qfp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="u8M-sA-joc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JrH-a8-EA6" secondAttribute="trailing" constant="10" id="vow-w4-Yyf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h2H-CM-Nd9"/>
@@ -114,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-591" y="41"/>
+            <point key="canvasLocation" x="-592.30769230769226" y="40.521327014218009"/>
         </scene>
         <!--Main menu controller-->
         <scene sceneID="1Ak-36-5in">
