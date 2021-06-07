@@ -129,28 +129,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdr-5Z-l7U">
-                                <rect key="frame" x="180" y="248" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07E-7c-d8r">
-                                <rect key="frame" x="71" y="234" width="248" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="button_강의평가_진행"/>
-                                <connections>
-                                    <segue destination="Skq-ge-R26" kind="show" id="JwV-ks-YtF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOS-85-vzd">
-                                <rect key="frame" x="71" y="354" width="248" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="button_성적확인"/>
-                                <connections>
-                                    <segue destination="eum-UH-G9V" kind="show" id="LSG-Or-ufy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-fX-3yr">
-                                <rect key="frame" x="329" y="110" width="44" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PTL-JP-rEC">
+                                <rect key="frame" x="20" y="183" width="350" height="246"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07E-7c-d8r">
+                                        <rect key="frame" x="51" y="0.0" width="248" height="108"/>
+                                        <state key="normal" backgroundImage="button_강의평가_진행"/>
+                                        <connections>
+                                            <segue destination="Skq-ge-R26" kind="show" id="JwV-ks-YtF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdr-5Z-l7U">
+                                        <rect key="frame" x="160" y="108" width="30" height="30"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOS-85-vzd">
+                                        <rect key="frame" x="51" y="138" width="248" height="108"/>
+                                        <state key="normal" backgroundImage="button_성적확인"/>
+                                        <connections>
+                                            <segue destination="eum-UH-G9V" kind="show" id="LSG-Or-ufy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-fX-3yr">
+                                <rect key="frame" x="10" y="103" width="370" height="30"/>
                                 <state key="normal" title="logout">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -162,10 +164,12 @@
                         <viewLayoutGuide key="safeArea" id="0qK-6M-KmY"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.96862745100000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0qK-6M-KmY" firstAttribute="bottom" secondItem="MgC-fX-3yr" secondAttribute="bottom" constant="670" id="Aew-US-rLr"/>
-                            <constraint firstItem="0qK-6M-KmY" firstAttribute="trailing" secondItem="MgC-fX-3yr" secondAttribute="trailing" constant="17" id="W3V-7I-YaM"/>
-                            <constraint firstItem="MgC-fX-3yr" firstAttribute="leading" secondItem="0qK-6M-KmY" secondAttribute="leading" constant="329" id="ix5-TK-dX8"/>
-                            <constraint firstItem="MgC-fX-3yr" firstAttribute="top" secondItem="0qK-6M-KmY" secondAttribute="top" constant="22" id="ldd-Ly-MUc"/>
+                            <constraint firstItem="PTL-JP-rEC" firstAttribute="leading" secondItem="0qK-6M-KmY" secondAttribute="leading" constant="20" id="1gr-te-Uai"/>
+                            <constraint firstItem="MgC-fX-3yr" firstAttribute="top" secondItem="0qK-6M-KmY" secondAttribute="top" constant="15" id="J3q-mg-kBT"/>
+                            <constraint firstItem="0qK-6M-KmY" firstAttribute="trailing" secondItem="MgC-fX-3yr" secondAttribute="trailing" constant="10" id="OoK-H6-XVC"/>
+                            <constraint firstItem="0qK-6M-KmY" firstAttribute="trailing" secondItem="PTL-JP-rEC" secondAttribute="trailing" constant="20" id="aR2-UT-egW"/>
+                            <constraint firstItem="PTL-JP-rEC" firstAttribute="top" secondItem="MgC-fX-3yr" secondAttribute="bottom" constant="50" id="evD-fI-9ki"/>
+                            <constraint firstItem="MgC-fX-3yr" firstAttribute="leading" secondItem="0qK-6M-KmY" secondAttribute="leading" constant="10" id="fLs-s6-ZJu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lU5-IK-PPZ"/>
