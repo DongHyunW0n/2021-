@@ -16,6 +16,7 @@
 		07E055F5266674B000EA3500 /* Survey_StdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E055F4266674B000EA3500 /* Survey_StdTests.swift */; };
 		07E05600266674B000EA3500 /* Survey_StdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E055FF266674B000EA3500 /* Survey_StdUITests.swift */; };
 		8F3F0862267255B8007B6D97 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F0861267255B8007B6D97 /* Survey.swift */; };
+		8F52E6BB267302110063FA55 /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52E6BA267302110063FA55 /* DeviceConfig.swift */; };
 		8FBB4005266BE6420052120D /* main_menu_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB4004266BE6420052120D /* main_menu_controller.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		07E055FF266674B000EA3500 /* Survey_StdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey_StdUITests.swift; sourceTree = "<group>"; };
 		07E05601266674B000EA3500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F3F0861267255B8007B6D97 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		8F52E6BA267302110063FA55 /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
 		8FBB4004266BE6420052120D /* main_menu_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_menu_controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				07E055E6266674B000EA3500 /* Assets.xcassets */,
 				07E055E8266674B000EA3500 /* LaunchScreen.storyboard */,
 				07E055EB266674B000EA3500 /* Info.plist */,
+				8F52E6BA267302110063FA55 /* DeviceConfig.swift */,
 			);
 			path = Survey_Std;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				07E055E2266674AF00EA3500 /* ViewController.swift in Sources */,
 				8FBB4005266BE6420052120D /* main_menu_controller.swift in Sources */,
 				8F3F0862267255B8007B6D97 /* Survey.swift in Sources */,
+				8F52E6BB267302110063FA55 /* DeviceConfig.swift in Sources */,
 				07E055DE266674AF00EA3500 /* AppDelegate.swift in Sources */,
 				07E055E0266674AF00EA3500 /* SceneDelegate.swift in Sources */,
 			);
