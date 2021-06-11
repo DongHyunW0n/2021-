@@ -215,30 +215,51 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luz-fP-uOA">
                                                         <rect key="frame" x="0.0" y="108" width="248" height="108"/>
                                                         <state key="normal" image="소프트웨어스튜디오버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="Ew8-fw-tWY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-Bz-pjQ">
                                                         <rect key="frame" x="0.0" y="216" width="248" height="108"/>
                                                         <state key="normal" backgroundImage="데이터베이스버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="1do-d6-4e7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6d-HR-F5d">
                                                         <rect key="frame" x="0.0" y="324" width="248" height="108"/>
                                                         <state key="normal" image="달란트와진로2버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="n8n-xj-WIT"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EH-RT-VTy">
                                                         <rect key="frame" x="0.0" y="432.00000000000006" width="248" height="107.99999999999994"/>
                                                         <state key="normal" image="인공지능버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="jT7-RF-gKh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-O6-zUW">
                                                         <rect key="frame" x="0.0" y="540" width="248" height="108"/>
                                                         <state key="normal" image="채플3버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="nwn-JX-JuV"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXy-wj-XVa">
                                                         <rect key="frame" x="0.0" y="648" width="248" height="108"/>
                                                         <state key="normal" image="소프트웨어공학버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="I5c-u7-Gp8"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC2-8G-rJk">
                                                         <rect key="frame" x="0.0" y="756" width="248" height="108"/>
                                                         <state key="normal" image="교양생활영어말하기3버튼"/>
+                                                        <connections>
+                                                            <segue destination="TqM-w0-waf" kind="show" id="NAw-Iv-zg7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-VB-BIp">
                                                         <rect key="frame" x="0.0" y="864" width="248" height="108"/>
@@ -303,6 +324,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVm-5s-35E">
                                                 <rect key="frame" x="15" y="1313.6666666666667" width="360" height="171.33333333333326"/>
                                                 <state key="normal" image="제출"/>
+                                                <connections>
+                                                    <segue destination="YrJ-tt-wZK" kind="show" id="ZXu-9W-u9m"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-iZ-nPL">
                                                 <rect key="frame" x="15" y="14.999999999999993" width="360" height="120.33333333333331"/>
@@ -693,21 +717,36 @@
             </objects>
             <point key="canvasLocation" x="2827.6923076923076" y="-185.54502369668245"/>
         </scene>
-        <!--View Controller-->
+        <!--Grade result-->
         <scene sceneID="OLg-4x-8Tr">
             <objects>
-                <viewController id="eum-UH-G9V" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="grade_result" id="eum-UH-G9V" customClass="grade_result" customModule="Survey_Std" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sj-RI-TaD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0b6-O5-b1r">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.96862745100000003" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JQO-JR-0dU"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.96862745100000003" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0b6-O5-b1r" firstAttribute="top" secondItem="JQO-JR-0dU" secondAttribute="top" id="4C9-xf-ym0"/>
+                            <constraint firstItem="0b6-O5-b1r" firstAttribute="leading" secondItem="JQO-JR-0dU" secondAttribute="leading" id="AXG-32-RxA"/>
+                            <constraint firstItem="JQO-JR-0dU" firstAttribute="trailing" secondItem="0b6-O5-b1r" secondAttribute="trailing" id="K1i-fj-8QK"/>
+                            <constraint firstItem="JQO-JR-0dU" firstAttribute="bottom" secondItem="0b6-O5-b1r" secondAttribute="bottom" id="WCj-HX-tPq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JTr-6t-CrF"/>
+                    <connections>
+                        <outlet property="tableView" destination="0b6-O5-b1r" id="zZq-hi-KHg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNP-cs-Mph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="556"/>
+            <point key="canvasLocation" x="1970.7692307692307" y="555.92417061611377"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jLS-JE-Vil">
@@ -729,6 +768,10 @@
             <point key="canvasLocation" x="196.92307692307691" y="40.521327014218009"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="n8n-xj-WIT"/>
+        <segue reference="aIf-Ch-Qxv"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="521" height="521"/>
         <image name="button_강의평가_진행" width="248" height="108"/>

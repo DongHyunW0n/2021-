@@ -16,6 +16,9 @@
 		07E05600266674B000EA3500 /* Survey_StdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E055FF266674B000EA3500 /* Survey_StdUITests.swift */; };
 		8F3F0862267255B8007B6D97 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F0861267255B8007B6D97 /* Survey.swift */; };
 		8F52E6BB267302110063FA55 /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52E6BA267302110063FA55 /* DeviceConfig.swift */; };
+		8F52E6BD2673BF350063FA55 /* grade_result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52E6BC2673BF350063FA55 /* grade_result.swift */; };
+		8F52E6C02673C2C20063FA55 /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52E6BE2673C2C20063FA55 /* GradeTableViewCell.swift */; };
+		8F52E6C12673C2C20063FA55 /* GradeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F52E6BF2673C2C20063FA55 /* GradeTableViewCell.xib */; };
 		8FBB4005266BE6420052120D /* main_menu_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB4004266BE6420052120D /* main_menu_controller.swift */; };
 		C296270226731D800063BEC7 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C296270126731D800063BEC7 /* Splash.storyboard */; };
 		C2962704267320220063BEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2962703267320220063BEC7 /* LaunchScreen.storyboard */; };
@@ -55,6 +58,9 @@
 		07E05601266674B000EA3500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F3F0861267255B8007B6D97 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		8F52E6BA267302110063FA55 /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
+		8F52E6BC2673BF350063FA55 /* grade_result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grade_result.swift; sourceTree = "<group>"; };
+		8F52E6BE2673C2C20063FA55 /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
+		8F52E6BF2673C2C20063FA55 /* GradeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradeTableViewCell.xib; sourceTree = "<group>"; };
 		8FBB4004266BE6420052120D /* main_menu_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_menu_controller.swift; sourceTree = "<group>"; };
 		C296270126731D800063BEC7 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		C2962703267320220063BEC7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				C296270126731D800063BEC7 /* Splash.storyboard */,
 				C2962703267320220063BEC7 /* LaunchScreen.storyboard */,
 				C2962705267320EB0063BEC7 /* LaunchScreenViewController.swift */,
+				8F52E6BC2673BF350063FA55 /* grade_result.swift */,
+				8F52E6BE2673C2C20063FA55 /* GradeTableViewCell.swift */,
+				8F52E6BF2673C2C20063FA55 /* GradeTableViewCell.xib */,
 			);
 			path = Survey_Std;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F52E6C12673C2C20063FA55 /* GradeTableViewCell.xib in Resources */,
 				07E055E7266674B000EA3500 /* Assets.xcassets in Resources */,
 				C2962704267320220063BEC7 /* LaunchScreen.storyboard in Resources */,
 				07E055E5266674AF00EA3500 /* Main.storyboard in Resources */,
@@ -279,7 +289,9 @@
 				8F3F0862267255B8007B6D97 /* Survey.swift in Sources */,
 				8F52E6BB267302110063FA55 /* DeviceConfig.swift in Sources */,
 				07E055DE266674AF00EA3500 /* AppDelegate.swift in Sources */,
+				8F52E6C02673C2C20063FA55 /* GradeTableViewCell.swift in Sources */,
 				07E055E0266674AF00EA3500 /* SceneDelegate.swift in Sources */,
+				8F52E6BD2673BF350063FA55 /* grade_result.swift in Sources */,
 				C2962706267320EB0063BEC7 /* LaunchScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
