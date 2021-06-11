@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-592.30769230769226" y="40.521327014218009"/>
+            <point key="canvasLocation" x="-1666" y="-4"/>
         </scene>
         <!--Main menu controller-->
         <scene sceneID="1Ak-36-5in">
@@ -328,14 +328,14 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-nL-xCO">
                                                                         <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="그렇다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons:" destination="TqM-w0-waf" eventType="touchUpInside" id="97W-yE-d9Q"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDF-Zy-i7l">
                                                                         <rect key="frame" x="246.66666666666671" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="보통이다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons:" destination="TqM-w0-waf" eventType="touchUpInside" id="DOg-Ud-HAW"/>
                                                                         </connections>
@@ -350,14 +350,14 @@
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-pN-soq">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons:" destination="TqM-w0-waf" eventType="touchUpInside" id="e6r-0Z-iZZ"/>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs6-X1-Ngg">
                                                                                 <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="전혀 아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons:" destination="TqM-w0-waf" eventType="touchUpInside" id="im6-lm-F4e"/>
                                                                                 </connections>
@@ -400,14 +400,14 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfe-0C-4fR">
                                                                         <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="그렇다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons2:" destination="TqM-w0-waf" eventType="touchUpInside" id="bb5-gs-fm6"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL9-MN-bAR">
                                                                         <rect key="frame" x="246.66666666666671" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="보통이다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons2:" destination="TqM-w0-waf" eventType="touchUpInside" id="JDh-xd-3Ll"/>
                                                                         </connections>
@@ -422,14 +422,14 @@
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9S-yW-iLA">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons2:" destination="TqM-w0-waf" eventType="touchUpInside" id="jFu-A2-wdw"/>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf0-fG-LDh">
                                                                                 <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="전혀 아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons2:" destination="TqM-w0-waf" eventType="touchUpInside" id="OMo-Hd-PLi"/>
                                                                                 </connections>
@@ -472,14 +472,14 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBq-iL-RCv">
                                                                         <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="그렇다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons3:" destination="TqM-w0-waf" eventType="touchUpInside" id="F5e-OJ-Ybh"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-aM-HFa">
                                                                         <rect key="frame" x="246.66666666666671" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="보통이다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons3:" destination="TqM-w0-waf" eventType="touchUpInside" id="cKA-W8-axq"/>
                                                                         </connections>
@@ -494,14 +494,14 @@
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-0u-jPc">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons3:" destination="TqM-w0-waf" eventType="touchUpInside" id="S35-Na-rwT"/>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfl-3m-w9W">
                                                                                 <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="전혀 아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons3:" destination="TqM-w0-waf" eventType="touchUpInside" id="F36-WR-gbV"/>
                                                                                 </connections>
@@ -544,14 +544,14 @@
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0x5-Kd-9RI">
                                                                         <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="그렇다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons4:" destination="TqM-w0-waf" eventType="touchUpInside" id="s3w-E6-S5N"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrK-ls-YrO">
                                                                         <rect key="frame" x="246.66666666666671" y="0.0" width="113.33333333333334" height="30"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                        <state key="normal" title="보통이다"/>
                                                                         <connections>
                                                                             <action selector="touchButtons4:" destination="TqM-w0-waf" eventType="touchUpInside" id="XmV-ut-AUO"/>
                                                                         </connections>
@@ -566,14 +566,14 @@
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-6g-iXP">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons4:" destination="TqM-w0-waf" eventType="touchUpInside" id="HJa-kD-Ld7"/>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeD-ci-UbR">
                                                                                 <rect key="frame" x="123.33333333333334" y="0.0" width="113.33333333333334" height="30"/>
-                                                                                <state key="normal" title="Button"/>
+                                                                                <state key="normal" title="전혀 아니다"/>
                                                                                 <connections>
                                                                                     <action selector="touchButtons4:" destination="TqM-w0-waf" eventType="touchUpInside" id="Jx3-vP-0FH"/>
                                                                                 </connections>

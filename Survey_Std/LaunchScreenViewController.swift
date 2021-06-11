@@ -28,7 +28,7 @@ class LaunchScreenViewController: UIViewController {
             self.view.window?.makeKeyAndVisible()
         
            } else {
-               let alert: UIAlertController = UIAlertController(title: "네트워크 상태 확인", message: "네트워크가 불안정 합니다.", preferredStyle: .alert)
+               let alert: UIAlertController = UIAlertController(title: "네트워크 오류", message: "네트워크 연결을 확인하세요.", preferredStyle: .alert)
                let action: UIAlertAction = UIAlertAction(title: "다시 시도", style: .default, handler: { (ACTION) in
                    self.checkDeviceNetworkStatus()
                })
