@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     }
     
    
+    //나중에 출력할때는 지원야하고 그떄까지 ios는 DB데이터가 어디 들어가야하는지 알아둬야함
     //임시로 만든 데이터 입력 버튼
     @IBAction func DataInputButton(_ sender: Any) {
         guard let id = textfield_id.text else {return}
