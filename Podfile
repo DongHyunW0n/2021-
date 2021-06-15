@@ -9,6 +9,7 @@ target 'Survey_Std' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
 
   target 'Survey_StdTests' do
