@@ -13,6 +13,8 @@ class main_menu_controller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.Output_Alert(title: "로그인 성공!", message: "로그인 하였습니다", text: "확인")
 
         // Do any additional setup after loading the view.
     }
@@ -31,5 +33,17 @@ class main_menu_controller: UIViewController {
    
         
         
+    
+    func Output_Alert(title : String, message : String, text : String) {
+
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+
+            let okButton = UIAlertAction(title: text, style: UIAlertAction.Style.cancel, handler: nil)
+
+            alertController.addAction(okButton)
+
+            return self.present(alertController, animated: true, completion: nil)
+
+        }
     
 }

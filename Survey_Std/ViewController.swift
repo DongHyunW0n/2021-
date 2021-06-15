@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class ViewController: UIViewController {
     
@@ -13,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var textfield_id: UITextField!
     @IBOutlet weak var textfield_pw: UITextField!
     @IBOutlet weak var button_login: UIButton!
+    @IBOutlet weak var button_sign_in: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,39 +23,49 @@ class ViewController: UIViewController {
     }
 
     private let db = DBHelper()
-    
-    @IBAction func login_button(_ sender: Any) {//로그인 버튼을 누르면 생기는 일들
-        let vcName = self.storyboard?.instantiateViewController(identifier: "start_Controller")
+    @IBAction func sign_in_button(_ sender: Any) {
+        
+        let vcName = self.storyboard?.instantiateViewController(identifier: "sign_in_ui")
         vcName?.modalPresentationStyle = .fullScreen//전체화면으로 보이게
         
         vcName?.modalTransitionStyle = .crossDissolve//애니메이션 삽입
         self.present(vcName!, animated: true, completion: nil)
+     
         
-        //DB - sqlite파트
-        guard let id = textfield_id.text else {return}
-        guard let pw = textfield_pw.text else {return}
+    }
     
-        let isEmpty = id.isEmpty && pw.isEmpty
-    
-        if !isEmpty{
-            db.query(queryString: "select * from user where id='\(id)' AND pw='\(pw)'")
-            print("로그인 성공")
+    @IBAction func login_button(_ sender: Any) {//로그인 버튼을 누르면 생기는 일들
+        
+        Auth.auth().signIn(withEmail: textfield_id.text!,password: textfield_pw.text!){(result,error) in
+            if error != nil{
+                print(error?.localizedDescription)
+                
+                self.Output_Alert(title: "오류", message: "로그인 실패", text: "확인")
+            }else{
+                print("로그인 성공!")
+                
+               
+                let vcName = self.storyboard?.instantiateViewController(identifier: "start_Controller")
+                vcName?.modalPresentationStyle = .fullScreen//전체화면으로 보이게
+                
+                vcName?.modalTransitionStyle = .crossDissolve//애니메이션 삽입
+                self.present(vcName!, animated: true, completion: nil)
+            }
         }
     }
     
-   
-    //임시로 만든 데이터 입력 버튼
-    @IBAction func DataInputButton(_ sender: Any) {
-        guard let id = textfield_id.text else {return}
-        guard let pw = textfield_pw.text else {return}
-    
-        let isEmpty = id.isEmpty && pw.isEmpty
-    
-        if !isEmpty{
-            db.insert(queryString: "insert into user(id, pw) values(?, ?)", id: NSString(string:id ), pw: NSString(string: pw))
-        }
-    }
-    
-    
-}
+    func Output_Alert(title : String, message : String, text : String) {
 
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+
+            let okButton = UIAlertAction(title: text, style: UIAlertAction.Style.cancel, handler: nil)
+
+            alertController.addAction(okButton)
+
+            return self.present(alertController, animated: true, completion: nil)
+
+        }
+    
+    
+
+}
