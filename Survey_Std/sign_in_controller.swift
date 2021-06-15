@@ -55,7 +55,7 @@ class sign_in_controller: UIViewController {
         
         
     }
-    //alert을 그냥 함수로 만들어버림
+    //alert을 그냥 쓰기 편하게 함수로 만들어버림
     func Output_Alert(title : String, message : String, text : String) {
 
             let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
@@ -70,7 +70,14 @@ class sign_in_controller: UIViewController {
 
 
 
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+         self.view.endEditing(true)
+
+   } // 화면 아무곳이나 터치하면 키보드 내려가게
+
+
+
     
     /*
     // MARK: - Navigation

@@ -67,5 +67,15 @@ class ViewController: UIViewController {
         }
     
     
+    //화면 아무곳이나 터치하면 키보드 내려가게
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+         self.view.endEditing(true)
+
+   }
+
+
+
+  
 
 }
