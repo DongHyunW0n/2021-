@@ -49,6 +49,8 @@ class sign_in_controller: UIViewController {
         vcName?.modalTransitionStyle = .crossDissolve//애니메이션 삽입
         self.present(vcName!, animated: true, completion: nil)
         
+       
+        
         
         
         
