@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		07E055F5266674B000EA3500 /* Survey_StdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E055F4266674B000EA3500 /* Survey_StdTests.swift */; };
 		07E05600266674B000EA3500 /* Survey_StdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E055FF266674B000EA3500 /* Survey_StdUITests.swift */; };
 		4CDED6411C08B8C9518CA73B /* Pods_Survey_Std_Survey_StdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EAD09F0FB7886807E63618 /* Pods_Survey_Std_Survey_StdUITests.framework */; };
+		8F2917AA2678827F00AA1596 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F2917A92678827F00AA1596 /* GoogleService-Info.plist */; };
 		8F3F0862267255B8007B6D97 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F0861267255B8007B6D97 /* Survey.swift */; };
 		8F52E6BB267302110063FA55 /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52E6BA267302110063FA55 /* DeviceConfig.swift */; };
 		8F52E6BD2673BF350063FA55 /* grade_result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52E6BC2673BF350063FA55 /* grade_result.swift */; };
@@ -67,6 +68,7 @@
 		28B4EFDD72180A008872D58D /* Pods_Survey_StdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Survey_StdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD6C1FC1805F53DE84D5623 /* Pods-Survey_Std-Survey_StdUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey_Std-Survey_StdUITests.release.xcconfig"; path = "Target Support Files/Pods-Survey_Std-Survey_StdUITests/Pods-Survey_Std-Survey_StdUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76C14249B3AF3196B5E97901 /* Pods-Survey_StdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Survey_StdTests.release.xcconfig"; path = "Target Support Files/Pods-Survey_StdTests/Pods-Survey_StdTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F2917A92678827F00AA1596 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F3F0861267255B8007B6D97 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		8F52E6BA267302110063FA55 /* DeviceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
 		8F52E6BC2673BF350063FA55 /* grade_result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grade_result.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				8FBB4004266BE6420052120D /* main_menu_controller.swift */,
 				07E055E6266674B000EA3500 /* Assets.xcassets */,
 				07E055EB266674B000EA3500 /* Info.plist */,
+				8F2917A92678827F00AA1596 /* GoogleService-Info.plist */,
 				8F52E6BA267302110063FA55 /* DeviceConfig.swift */,
 				C296270126731D800063BEC7 /* Splash.storyboard */,
 				C2962703267320220063BEC7 /* LaunchScreen.storyboard */,
@@ -182,7 +185,6 @@
 				F82F3AA28E5E89FE7A9FE009 /* Pods-Survey_StdTests.debug.xcconfig */,
 				76C14249B3AF3196B5E97901 /* Pods-Survey_StdTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +311,7 @@
 				C2962704267320220063BEC7 /* LaunchScreen.storyboard in Resources */,
 				07E055E5266674AF00EA3500 /* Main.storyboard in Resources */,
 				C296270226731D800063BEC7 /* Splash.storyboard in Resources */,
+				8F2917AA2678827F00AA1596 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
