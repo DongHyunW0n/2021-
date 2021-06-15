@@ -1,0 +1,6 @@
+framework module Pods_Survey_StdTests {
+  umbrella header "Pods-Survey_StdTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
