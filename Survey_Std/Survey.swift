@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import Firebase
+
 
 class Survey: UIViewController {
+    
+    
+    
+    var refArtists : DatabaseReference!
 
    
     
+    @IBOutlet weak var textFieldName: UITextField!
+    @IBOutlet weak var textFieldGenre: UITextView!
     @IBOutlet var radioButtons: [UIButton]!
     @IBOutlet var radioButtons2: [UIButton]!
     @IBOutlet var radioButtons3: [UIButton]!
@@ -28,9 +36,34 @@ class Survey: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        refArtists = Database.database().reference().child("인공지능");
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func send_button(_ sender: UIButton) {
+        
+        
+        
+        addArtist()
+        
+        
+    }
+    
+    
+    
+    
+    func addArtist(){
+        let key = refArtists.childByAutoId().key
+        
+        let artist = ["id":key,
+                       "artistName":textFieldName.text! as String?,
+                       "artistGenre":textFieldGenre.text! as String?
+        ]
+        
+        
+        refArtists.child(key!).setValue(artist)
+    }
    
     @IBAction func touchButtons(_ sender: UIButton) {
         if indexOfOneAndOnly1 != nil{
