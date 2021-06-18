@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 
-class Survey: UIViewController {
+class Survey_1: UIViewController {
     
     
     
@@ -23,7 +23,6 @@ class Survey: UIViewController {
     @IBOutlet var radioButtons2: [UIButton]!
     @IBOutlet var radioButtons3: [UIButton]!
     @IBOutlet var radioButtons4: [UIButton]!
-    @IBOutlet var radioButtons5: [UIButton]!
     
     @IBOutlet weak var send_button: UIButton!
     
@@ -32,7 +31,6 @@ class Survey: UIViewController {
     var indexOfOneAndOnly2: Int?
     var indexOfOneAndOnly3: Int?
     var indexOfOneAndOnly4: Int?
-    var indexOfOneAndOnly5: Int?
 
     
     override func viewDidLoad() {
@@ -41,7 +39,7 @@ class Survey: UIViewController {
     
 
        
-        refArtists = Database.database().reference().child("달란트와진로3");
+        refArtists = Database.database().reference().child("소프트웨어스튜디오");
         
         // Do any additional setup after loading the view.
     }
@@ -154,26 +152,6 @@ class Survey: UIViewController {
         }else{
             sender.isSelected = true
             indexOfOneAndOnly4 = radioButtons4.firstIndex(of: sender)
-        }
-    }
-    
-    @IBAction func touchButtons5(_ sender: UIButton) {
-        
-        if indexOfOneAndOnly5 != nil{
-            if !sender.isSelected{
-                for index in radioButtons5.indices{
-                    radioButtons5[index].isSelected = false
-                }
-                sender.isSelected = true
-                indexOfOneAndOnly5 = radioButtons5.firstIndex(of: sender)
-            }else{
-                sender.isSelected = false
-                indexOfOneAndOnly5 = nil
-            }
-            
-        }else{
-            sender.isSelected = true
-            indexOfOneAndOnly5 = radioButtons5.firstIndex(of: sender)
         }
     }
     
